@@ -1,3 +1,4 @@
+//PUSH REQUEST KENNETH
 $(".req").on("click focus", function () {
     $("#subForm .req").removeClass("input-err");
     $(".err-msg").hide();
