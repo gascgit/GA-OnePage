@@ -10,7 +10,7 @@ bodyFade = false;       // BODY HIDE ON RESIZE AND LOAD
 preLoader = true;       // ADD PRELOADER
 preLoadBG = "#78787A";     // PRELOADER BACKGROUND COLOUR
 // - - - - - - - - - - - - - - - - - - - - //
-// 
+//
 // - - - - - - - - - - PRELOADER START - - - - - - - - - - - - - - //
 if (bodyFade) {
     $("body").css("opacity", 0);
@@ -21,7 +21,7 @@ if (bodyFade) {
     });
 }
 // - - - - - - - - - - - - - - - - - - - - //
-// 
+//
 // - - - - - - - - - - PRELOADER START - - - - - - - - - - - - - - //
 function preLoadStart() {
     winW = $(window).width();
@@ -67,7 +67,7 @@ $(document).ready(function () {
             }
         }
         // - - - - - - - - - - - - - - - - - - - - //
-        // 
+        //
         // - - - - - - - - - - RETURN WINDOW SIZE - - - - - - - - - - - - - - //
         function winSize(w, half) {
             divide = half ? 2 : 1;
@@ -92,7 +92,7 @@ $(document).ready(function () {
                     fullPanel();
                     sameHeight();
                     vAlignNav();
-                    vAlign();                    
+                    vAlign();
                     customize();
                     fadeIn();
                 }
@@ -116,37 +116,37 @@ $(document).ready(function () {
             }, 250);
         });
         // - - - - - - - - - - - - - - - - - - - - //
-        // 
+        //
         // - - - - - - - - - - FADE IN BODY ON LOAD - - - - - - - - - - //
         function fadeIn() {
             navH = $(".navbar-inverse").height();
             $("body").css("padding-top", navH + "px");
         }
-        // 
+        //
         // - - - - - - - - - - IS MOBI ONLY - - - - - - - - - - //
         function isCell() {
             return (/Android|webOS|iPhone|iPod|BlackBerry|BB|IEMobile|Windows Phone|Silk|Opera Mini/i.test(navigator.userAgent)) ? true : false;
         }
         // - - - - - - - - - - - - - - - - - - - - //
-        // 
+        //
         // - - - - - - - - - - IS MOBI OR TABLET - - - - - - - - - - //
         function isMobi() {
             return (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) ? true : false;
         }
         // - - - - - - - - - - - - - - - - - - - - //
-        // 
+        //
         // - - - - - - - - - - IS XS VISIBLE - - - - - - - - - - //
         function isXS() {
             return $("#is-xs").css("display") === "block" ? true : false;
         }
         // - - - - - - - - - - - - - - - - - - - - //
-        // 
+        //
         // - - - - - - - - - - IS SM VISIBLE - - - - - - - - - - //
         function isSM() {
             return $("#is-sm").css("display") === "block" ? true : false;
         }
         // - - - - - - - - - - - - - - - - - - - - //
-        // 
+        //
         // - - - - - - - - - - MAIN MENU SCROLLER - - - - -  - - - - - //
         $(".navit").click(function (event) {
             event.preventDefault();
@@ -178,11 +178,13 @@ $(document).ready(function () {
             }
         });
         // - - - - - - - - - - - - - - - - - - - - //
-        // 
-        // - - - - - - - - - - MAIN MENU CHANGE INDICATOR ON SCROLL - - - - - - - - - - //    
+        //
+        // - - - - - - - - - - MAIN MENU CHANGE INDICATOR ON SCROLL - - - - - - - - - - //
         var getLast = '';
 
         $(window).on('scroll', function () {
+
+            // - - - - - - - - - - SIZE OF LOGO ON SCROLL - - - - - - - - - - //
             if (logoScrollH) {
                 if ($(document).scrollTop() > 0) {
                     if ($('#logo').data('size') == 'big') {
@@ -203,7 +205,7 @@ $(document).ready(function () {
                 }
             }
 
-            // - - - - - - - - - - HIGHLIGHT NAVBAR MENU ITEM - - - - - - - - - - //  
+            // - - - - - - - - - - HIGHLIGHT NAVBAR MENU ITEM - - - - - - - - - - //
             if (navBarHighlight) {
                 var scrollTop = $(this).scrollTop();
                 $('.section').each(function () {
@@ -223,8 +225,8 @@ $(document).ready(function () {
                 });
             }
             // - - - - - - - - - - - - - - - - - - - - //
-            // 
-            // - - - - - - - - - - FADE IN SECTION ON SCROLL - - - - - - - - - - //  
+            //
+            // - - - - - - - - - - FADE IN SECTION ON SCROLL - - - - - - - - - - //
             if (fadeInScroll) {
                 $(".section").each(function (i) {
                     var bottom_of_object = $(this).offset().top + $(this).outerHeight() / 5;
@@ -242,7 +244,7 @@ $(document).ready(function () {
             // - - - - - - - - - - - - - - - - - - - - //
         });
         // - - - - - - - - - - - - - - - - - - - - //
-        // 
+        //
         // - - - - - - - - - - VERTICAL ALIGN ELEMENT TO PARENT - - - - - - - - - - //
         function vAlign(inParent) {
             setTimeout(function () {
@@ -254,7 +256,7 @@ $(document).ready(function () {
             }, 200);
         }
         // - - - - - - - - - - - - - - - - - - - - //
-        // 
+        //
         // - - - - - - - - - - FANCYBOX - - - - - - - - - - //
         $(".fbox").fancybox({
             padding: 0
@@ -276,7 +278,7 @@ $(document).ready(function () {
             });
         }
         // - - - - - - - - - - - - - - - - - - - - //
-        // 
+        //
         // - - - - - - - - - - HASHTAG LISTENER ON LOAD (THANK YOU)- - - - - - - - - - //
         var hash = window.location.hash;
         if (hash === "#thankyou") {
@@ -292,7 +294,7 @@ $(document).ready(function () {
             }, 1500);
         }
         // - - - - - - - - - - - - - - - - - - - - //
-        // 
+        //
         // - - - - - - - - - - FORM VALIDATION - - - - - - - - - - //
         $(".submitformBtn").click(function () {
             err = false;
@@ -321,7 +323,7 @@ $(document).ready(function () {
             $(this).removeClass("input-err");
         });
         // - - - - - - - - - - - - - - - - - - - - //
-        // 
+        //
         // - - - - - - - - - - ONLY NUMBERS IN PHONE FIELD - - - - - - - - - - //
         $(".numonly").keydown(function (e) {
             // Allow: backspace, delete, tab, escape, enter and .
@@ -383,7 +385,6 @@ $(document).ready(function () {
                 $(".ameninfo").slideUp(250);
             }
         });
-       
 
         $(".selector").click(function () {
             $(".priceoptions").slideToggle(250);
@@ -412,8 +413,7 @@ $(document).ready(function () {
                 document.getElementById('mohammad123').style.visibility = 'visible';
                 document.getElementById('mohammad123').style.display = 'block';
 
-            } else
-            {
+            } else {
                 document.getElementById('mohammad123').style.visibility = 'hidden';
                 document.getElementById('mohammad123').style.display = 'none';
 
@@ -468,4 +468,4 @@ $(document).ready(function () {
             console.log("trig click");
         }, 1500);
     });
-});    
+});
