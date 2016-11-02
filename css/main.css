@@ -3,7 +3,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
-/* 
+/*
     Created on : Aug 16, 2016, 10:56:22 AM
     Author     : sergio
 */
@@ -21,16 +21,16 @@ a {
   text-decoration: none; }
 
 a:hover {
-  opacity: .5; }
+  opacity: 0.5; }
 
 /* ==========================================================================
    Form Error
    ========================================================================== */
 .input-err {
   border: 2px #FF0000 solid;
-  -webkit-box-shadow: inset 0px 0px 7px 0px rgba(255, 0, 0, 0.5);
-  -moz-box-shadow: inset 0px 0px 7px 0px rgba(255, 0, 0, 0.5);
-  box-shadow: inset 0px 0px 7px 0px rgba(255, 0, 0, 0.5); }
+  -webkit-box-shadow: inset 0 0 7px 0 rgba(255, 0, 0, 0.5);
+  -moz-box-shadow: inset 0 0 7px 0 rgba(255, 0, 0, 0.5);
+  box-shadow: inset 0 0 7px 0 rgba(255, 0, 0, 0.5); }
 
 .err-msg {
   color: #CC0000;
@@ -39,7 +39,10 @@ a:hover {
 /* ==========================================================================
    Input Placeholder
    ========================================================================== */
-input[type="text"]::-webkit-input-placeholder, input[type="text"]::-moz-placeholder, input[type="text"]:-moz-placeholder, input[type="text"]:-ms-input-placeholder {
+input[type="text"]:-moz-placeholder,
+input[type="text"]:-ms-input-placeholder,
+input[type="text"]::-moz-placeholder,
+input[type="text"]::-webkit-input-placeholder {
   color: #FFF;
   text-transform: uppercase; }
 
@@ -73,7 +76,9 @@ input[type="text"]::-webkit-input-placeholder, input[type="text"]::-moz-placehol
   max-width: 200px;
   max-height: 80px; }
 
-#navbar li, #middle-menu li, footer li {
+#middle-menu li,
+#navbar li,
+footer li {
   display: inline-block; }
 
 .navbar-toggle {
@@ -98,7 +103,9 @@ input[type="text"]::-webkit-input-placeholder, input[type="text"]::-moz-placehol
     border: 0;
     margin-top: 0; }
 
-  .navbar-form li, #middle-menu li, footer li {
+  #middle-menu li,
+  .navbar-form li,
+  footer li {
     display: block;
     margin: 5px 0; }
 
@@ -109,13 +116,15 @@ input[type="text"]::-webkit-input-placeholder, input[type="text"]::-moz-placehol
   .navbar-form li span {
     display: block; }
 
-  .navit-circle, .navit-circle-wh {
+  .navit-circle,
+  .navit-circle-wh {
     display: none !important; }
 
   .navbar-fixed-top {
     height: auto; }
 
-  #navbar li, #navbar li a {
+  #navbar li,
+  #navbar li a {
     display: block;
     width: 100%;
     padding: 5px; }
