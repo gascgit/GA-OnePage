@@ -460,8 +460,8 @@ $(document).ready(function () {
                 setLeft = ($('.slider-centered .slick-current').offset().left - $(".slider-centered").offset().left);
                 left = setLeft - (divW / 2) - 25;
                 right = setLeft + (divW + (divW / 2)) - 30;
-                $(".slick-prev").css("left", left + "px");
-                $(".slick-next").css("left", right + "px") ;
+                $(".slider-centered .slick-prev").css("left", left + "px");
+                $(".slider-centered .slick-next").css("left", right + "px") ;
             }, 250);
         }
         $(window).resize(centerNav);
