@@ -126,6 +126,58 @@ footer li {
     z-index: 1;
 }
 
+.slider-centered .slick-prev,
+.slider-centered .slick-next {
+    z-index: 999;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#192762+0,263a7f+100 */
+    background: #192762;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #192762 0%, #263a7f 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #192762 0%, #263a7f 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #192762 0%, #263a7f 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#192762', endColorstr='#263a7f', GradientType=1);
+    /* IE6-9 */
+    color: #FFF;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #FFF;
+}
+
+.slider-centered .slick-prev:before {
+    font-family: 'Glyphicons Halflings';
+    content: "\e257";
+}
+.slider-centered .slick-next:before {
+    font-family: 'Glyphicons Halflings';
+    content: "\e258";
+}
+
+/* CENTERED */
+
+.slider-centered .slick-slide div {
+    opacity: 0.8;
+    transition: all 500ms ease;
+    position:relative;
+}
+
+.slider-centered div {
+    margin:2.25em 5px;
+}
+
+.slider-centered .slick-center div {
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    color: #e67e22;
+    opacity: 1;
+    transform: scale(2);    
+    z-index:9;
+}
+
 /* ==========================================================================
    Media
    ========================================================================== */
