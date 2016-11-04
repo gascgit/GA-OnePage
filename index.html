@@ -2,43 +2,57 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+   <!--<![endif]-->
+
    <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title></title>
       <meta name="description" content="">
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
       <link rel="apple-touch-icon" href="apple-touch-icon.png">
       <link rel="shortcut icon" href="favicon.ico?v=1.1">
       <link rel="stylesheet" href="css/bootstrap.css">
       <link rel="stylesheet" href="css/bootstrap-theme.min.css">
       <!-- FANCYBOX -->
-      <link href="js/libs/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css"/>
+      <link href="js/bower_components/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css" />
       <!-- GOOGLE FONT -->
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800,800italic,700italic,600italic,400italic,300italic' rel='stylesheet' type='text/css'>
+      <!-- SLICK SLIDER -->
+      <link href="js/bower_components/slick-carousel/slick/slick.css" rel="stylesheet" type="text/css" />
+      <link href="js/bower_components/slick-carousel/slick/slick-theme.css" rel="stylesheet" type="text/css" />
+
       <!-- MAIN CSS -->
       <link rel="stylesheet" href="css/main.css">
       <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
       <style>
          #gallery img {
-             max-width:100%;
+             max-width: 100%;
          }
+
          .slider-img-holder {
-             max-width:100%;
+             max-width: 100%;
          }
+
          #moveit img {
-             position:relative;
-             top:0;
-             left:0;
-             width:100%;
+             position: relative;
+             top: 0;
+             left: 0;
+             width: 100%;
          }
       </style>
+      <!-- PRELOADER -->
+      <script src="js/preloader.js"></script>
    </head>
+
    <body>
+      <!-- PRELOADER INIT -->
+      <script>preLoader();</script>
       <!--[if lt IE 8]>
-          <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-      <![endif]-->
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
          <div class="container">
             <div class="navbar-header">
@@ -55,7 +69,7 @@
             <div id="navbar" class="navbar-collapse collapse text-right">
                <div id="navbar-container">
                   <ul class="navbar-form" style='list-style:none'>
-                     <li><a href="body" class="navit actv">HOME</a></li>   
+                     <li><a href="body" class="navit actv">HOME</a></li>
                      <li class="sep hidden-xs"> / </li>
                      <li><a href="#models" class="navit">MODELS</a></li>
                      <li class="sep hidden-xs"> / </li>
@@ -67,13 +81,18 @@
                      <li class="visible-xs"><a href="#registernow-pop" class="fancybox">REGISTER NOW</a></li>
                   </ul>
                </div>
-            </div><!--/.navbar-collapse -->
+            </div>
+            <!--/.navbar-collapse -->
          </div>
       </nav>
 
-      <!-- SPACER DELETE ME -->
-      <div style="height:100px"></div> 
-      
+      <!-- SLICK SLIDER -->
+      <div class="slider">
+         <div><img src="img/gal5.jpg"/></div>
+         <div><img src="img/gal6.jpg"/></div>
+         <div><img src="img/gal7.jpg"/></div>
+      </div>
+
       <!-- MODELS -->
       <div id="models" class="container section">
          <div id="moveit" class="row">
@@ -82,24 +101,24 @@
                <hr>
             </div>
             <div class="col-md-4" style="position:relative">
-               <img id="block1" src="img/gal4.jpg" rel="gall" title="Gallery 4" style="color: blue; max-width:100%"/>
+               <img id="block1" src="img/gal4.jpg" rel="gall" title="Gallery 4" style="color: blue; max-width:100%" />
             </div>
             <div class="col-md-4" style="position:relative">
-               <img id="block2" src="img/gal4.jpg" rel="gall" title="Gallery 4" style="color: blue; max-width:100%"/>
+               <img id="block2" src="img/gal4.jpg" rel="gall" title="Gallery 4" style="color: blue; max-width:100%" />
             </div>
             <div class="col-md-4" style="position:relative">
-               <img id="block3" src="img/gal4.jpg" rel="gall" title="Gallery 4" style="color: blue; max-width:100%"/>
+               <img id="block3" src="img/gal4.jpg" rel="gall" title="Gallery 4" style="color: blue; max-width:100%" />
             </div>
          </div>
          <div id="moveit" class="row">
             <div class="col-md-4" style="position:relative">
-               <img id="block4" src="img/gal4.jpg" rel="gall" title="Gallery 4" style="color: blue; max-width:100%"/>
+               <img id="block4" src="img/gal4.jpg" rel="gall" title="Gallery 4" style="color: blue; max-width:100%" />
             </div>
             <div class="col-md-4" style="position:relative">
-               <img id="block5" src="img/gal4.jpg" rel="gall" title="Gallery 4" style="color: blue; max-width:100%"/>
+               <img id="block5" src="img/gal4.jpg" rel="gall" title="Gallery 4" style="color: blue; max-width:100%" />
             </div>
             <div class="col-md-4" style="position:relative">
-               <img id="block6" src="img/gal4.jpg" rel="gall" title="Gallery 4" style="color: blue; max-width:100%"/>
+               <img id="block6" src="img/gal4.jpg" rel="gall" title="Gallery 4" style="color: blue; max-width:100%" />
             </div>
          </div>
          <div class="row">
@@ -115,7 +134,8 @@
             </div>
             <div class="col-md-4">
                <h2>Heading</h2>
-               <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+               <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet
+                  risus.</p>
                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
             </div>
          </div>
@@ -184,21 +204,24 @@
       <div id="is-xs" class="visible-xs"></div>
       <div id="is-sm" class="visible-sm"></div>
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
-      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+      <script>
+         window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')
+      </script>
 
       <!-- CORE -->
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-      <script src="js/libs/fancybox/jquery.fancybox.js" type="text/javascript"></script>
+      <script src="js/bower_components/fancybox/jquery.fancybox.js" type="text/javascript"></script>
       <!-- end CORE -->
       <!-- SLICK -->
       <script src="js/bower_components/slick-carousel/slick/slick.min.js" type="text/javascript"></script>
       <!-- GOOGLE MAPS -->
       <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&hl=en&key=AIzaSyBs1KEK0O7xUKd_Uz7PDD9LcTfg8i4kQDU"></script>
       <script src="js/map.js" type="text/javascript"></script>
+      <!-- SLICK SLIDER -->
+      <script src="js/bower_components/slick-carousel/slick/slick.js" type="text/javascript"></script>
       <!-- MAIN -->
       <script src="js/main.js"></script>
       <script>
-
          $(document).ready(function () {
              $(window).load(function () {
 
@@ -212,11 +235,13 @@
                          $(elems[a]).animate({
                              left: 0
                          }, {
-                             duration: times[a], easing: "swing"
+                             duration: times[a],
+                             easing: "swing"
                          });
                      }
                  }
                  animITR();
+
                  function animITL() {
                      elems = ["#block1", "#block2", "#block4"];
                      times = [4000, 2000, 3000];
@@ -225,7 +250,8 @@
                          $(elems[a]).animate({
                              left: 0
                          }, {
-                             duration: times[a], easing: "swing"
+                             duration: times[a],
+                             easing: "swing"
                          });
                      }
                  }
@@ -234,4 +260,5 @@
          });
       </script>
    </body>
+
 </html>
