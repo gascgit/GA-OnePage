@@ -10,6 +10,8 @@ and open the template in the editor.
 $none: none;
 $primary-bg: #FFF;
 $primary-txt: #000;
+$nav-bg: #000;
+$nav-rbg: rgba(0,0,0,1);
 $nav-link: #CC0000;
 $nav-hover: #DDD;
 $err-border: 2px #FF0000 solid;
@@ -43,6 +45,19 @@ a {
 
 a:hover {
     opacity: 0.5;
+}
+
+/* ==========================================================================
+   For logoScrollH function to make logo smaller on scroll
+   ========================================================================== */
+
+#logo {
+    height:80px;
+    @extend .trans;
+}
+
+#logo.small {
+    height:40px;
 }
 
 /* ==========================================================================
@@ -95,10 +110,17 @@ input[type="text"]::-webkit-input-placeholder {
 }
 
 .navbar-inverse {
-    background: $primary-bg;
+    background: $nav-bg;
+    background: $nav-rbg;
     border: 0;
-    min-height: 80px;
+    /*min-height: 80px;*/
     border-bottom: 1px solid #FF0000;
+    border-radius:0;
+    @extend .trans;
+}
+
+.navbar-inverse.opacity {
+    background: rgba(0,0,0,.75);
 }
 
 .navbar-brand {
@@ -139,6 +161,8 @@ footer li {
     z-index: 1;
 }
 
+/* CENTERED */
+
 .slider-centered .slick-prev,
 .slider-centered .slick-next {
     z-index: 999;
@@ -167,8 +191,6 @@ footer li {
     font-family: 'Glyphicons Halflings';
     content: "\e258";
 }
-
-/* CENTERED */
 
 .slider-centered .slick-slide div {
     opacity: 0.8;
@@ -222,8 +244,7 @@ footer li {
         margin: 5px 0;
     }
 
-    .navbar-collapse .navit {
-        border-bottom: 1px solid #FFF;
+    .navbar-collapse .navit {        
         padding: 10px 0;
     }
 
@@ -249,5 +270,9 @@ footer li {
 
     #navbar li {
         border-bottom: #CCC solid 1px;
+    }
+    
+    .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+        max-height:100% !important;
     }
 }
